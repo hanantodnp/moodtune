@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif !important;
+    background: radial-gradient(circle at 10% 20%, #0f172a 0%, #1e293b 90%);
+    color: #f1f5f9;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #06b6d4, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-6px);
+}
+
+/* MUSIC CARD */
+.music-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.music-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+/* SIDEBAR */
+[data-testid="stSidebar"] {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 18px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+[data-testid="stSidebar"] h2 {
+    color: #818cf8;
+    text-align: center;
+}
+
+/* BUTTONS */
+.stButton > button {
+    background: linear-gradient(90deg, #06b6d4, #818cf8);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 100%;
+}
+.stButton > button:hover {
+    opacity: 0.95;
+    transform: scale(1.03);
+}
+
+/* FILE UPLOADER */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: rgba(255,255,255,0.05);
+    border: 2px dashed #475569;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+[data-testid="stFileUploaderDropzone"]:hover {
+    border-color: #06b6d4;
+}
+
+/* METRICS GRID */
+[data-testid="stMetricValue"] {
+    font-size: 1.5rem;
+    color: #38bdf8;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #06b6d4, #818cf8);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.05);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .title { font-size: 2rem; }
+    .card { padding: 1.2rem; }
+    iframe { height: 100px !important; }
+}
