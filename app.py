@@ -206,7 +206,7 @@ elif page == "Dataset":
     # Ringkasan Dataset
     if df_knn is not None:
         st.subheader("Dataset (indexed_tracks.csv)")
-        st.write("Dataset ini yang digunakan.")
+        st.write("Dataset yang digunakan.")
 
         col_size, col_features = st.columns(2)
         with col_size:
