@@ -206,7 +206,7 @@ elif page == "Dataset":
     # Ringkasan Dataset
     if df_knn is not None:
         st.subheader("Dataset (indexed_tracks.csv)")
-        st.write("Dataset ini digunakan untuk model Content-Based KNN (Lagu Serupa) dan Mood Centroid (Unggah Gambar).")
+        st.write("Dataset ini yang digunakan.")
 
         col_size, col_features = st.columns(2)
         with col_size:
